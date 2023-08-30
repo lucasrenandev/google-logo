@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: #fff;
+}
+
+.google-logo {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border-top: 50px solid #E43E2B;
+    border-right: 50px solid #3B7DED;
+    border-bottom: 50px solid #2BA24C;
+    border-left: 50px solid #F0B501;
+}
+
+.google-logo::before {
+    content: '';
+    position: absolute;
+    top: -155px;
+    right: -155px;
+    border-top: 100px solid transparent;
+    border-right: 100px solid #fff;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid transparent;
+    transform: rotate(90deg);
+}
+.google-logo::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    width: 100px;
+    height: 50px;
+    background-color: #3B7DED;
+    transform: translate(-5px, -20px);
+}
